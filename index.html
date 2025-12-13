@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PACKKRO – Packers & Movers Delhi/NCR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="PACKKRO – Professional Packers & Movers in Delhi NCR. Safe, affordable and stress-free relocation services.">
+
+<style>
+:root{
+  --yellow:#ffb703;
+  --black:#0f172a;
+  --gray:#64748b;
+}
+*{box-sizing:border-box;font-family:Inter,Arial,sans-serif;}
+body{margin:0;color:var(--black);background:#fff;}
+a{text-decoration:none;color:inherit}
+
+/* Header */
+header{
+  background:var(--black);
+  color:#fff;
+  padding:15px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+header h1{color:var(--yellow);margin:0}
+nav a{margin-left:20px;color:#fff;font-weight:500}
+
+/* Hero */
+.hero{
+  padding:80px 8%;
+  background:linear-gradient(120deg,#111827,#020617);
+  color:#fff;
+}
+.hero h2{font-size:42px}
+.hero p{max-width:600px;color:#cbd5f5}
+.hero .btns a{
+  display:inline-block;
+  margin:10px 10px 0 0;
+  padding:12px 20px;
+  border-radius:6px;
+  font-weight:600;
+}
+.btn-primary{background:var(--yellow);color:#000}
+.btn-outline{border:2px solid #fff;color:#fff}
+
+/* Sections */
+section{padding:70px 8%}
+h3{text-align:center;font-size:32px;margin-bottom:40px}
+
+/* Cards */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+.card{
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  transition:.3s;
+}
+.card:hover{transform:translateY(-6px)}
+
+/* Customer Reviews */
+.reviews-wrapper{
+  max-width:900px;
+  margin:auto;
+  overflow:hidden;
+}
+.reviews-track{
+  display:flex;
+  transition:transform .8s ease;
+}
+.review-card{
+  min-width:100%;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  background:#fff;
+  text-align:center;
+}
+.stars{
+  color:var(--yellow);
+  font-size:18px;
+  margin-bottom:10px;
+}
+.review-name{
+  font-weight:600;
+  margin-top:10px;
+}
+.review-city{
+  color:var(--gray);
+  font-size:14px;
+}
+
+/* Quote Form */
+form{
+  max-width:700px;
+  margin:auto;
+  display:grid;
+  gap:15px;
+}
+input,textarea,button{
+  padding:12px;
+  border-radius:6px;
+  border:1px solid #cbd5e1;
+  font-size:15px;
+}
+button{
+  background:var(--yellow);
+  border:none;
+  font-weight:700;
+  cursor:pointer;
+}
+button:hover{opacity:.9}
+
+/* Validation Styling (Optional but helpful) */
+input:invalid:not(:focus):not(:placeholder-shown) {
+  border-color: #ef4444; /* Red border for invalid fields */
+}
+
+/* Footer */
+footer{
+  background:#020617;
+  color:#e5e7eb;
+  padding:40px 8%;
+}
+footer a{color:var(--yellow)}
+
+@media(max-width:768px){
+.hero h2{font-size:32px}
+header{flex-direction:column;gap:10px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>PACKKRO</h1>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#quote">Get Quote</a>
+    <a href="tel:7303503765">Call</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Smart, Stress-Free Shifting in Delhi/NCR</h2>
+  <p>Reliable packers & movers for home and office relocation with safe packing and on-time delivery.</p>
+  <div class="btns">
+    <a href="#quote" class="btn-primary">Get Free Quote</a>
+    <a href="tel:7303503765" class="btn-outline">Call Now</a>
+    <a href="https://wa.me/917303503765" class="btn-outline">WhatsApp</a>
+  </div>
+</section>
+
+<section id="services">
+<h3>Our Services</h3>
+<div class="grid">
+  <div class="card">🏠 Home Shifting</div>
+  <div class="card">🏢 Office Relocation</div>
+  <div class="card">🚚 Local & Intercity Moves</div>
+  <div class="card">📦 Packing & Unpacking</div>
+  <div class="card">🧰 Loading & Unloading</div>
+  <div class="card">🏬 Storage & Warehouse</div>
+</div>
+</section>
+
+<section>
+<h3>Why Choose PACKKRO</h3>
+<div class="grid">
+  <div class="card">✔ Trained Staff</div>
+  <div class="card">✔ Safe Packing</div>
+  <div class="card">✔ Affordable Pricing</div>
+  <div class="card">✔ On-Time Delivery</div>
+</div>
+</section>
+
+<section id="reviews">
+<h3>Customer Reviews</h3>
+<div class="reviews-wrapper">
+  <div class="reviews-track" id="reviewsTrack">
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      Very smooth shifting experience. Professional staff.
+      <div class="review-name">Sana afroz</div>
+      <div class="review-city">Delhi</div>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      Excellent packing quality and safe delivery.
+      <div class="review-name">Kundan mishra</div>
+      <div class="review-city">Noida</div>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      Affordable and reliable service.
+      <div class="review-name">Amit Singh</div>
+      <div class="review-city">Gurugram</div>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      On-time delivery and careful handling.
+      <div class="review-name">Neha Gupta</div>
+      <div class="review-city">Ghaziabad</div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<section id="about">
+<h3>About Us</h3>
+<p style="max-width:800px;margin:auto;text-align:center">
+PACKKRO is a trusted Packers & Movers company serving Delhi, Noida, Gurugram, Ghaziabad and Faridabad.
+Our mission is to deliver stress-free, safe and affordable relocation services.
+</p>
+</section>
+
+<section id="quote">
+<h3>Get a Free Quote</h3>
+<form id="quoteForm">
+<input name="name" placeholder="Full Name *" required minlength="3">
+<input name="phone" placeholder="Phone Number (10 Digits) *" required pattern="[0-9]{10}" maxlength="10">
+<input name="email" placeholder="Email" type="email">
+<input name="pickup" placeholder="Pickup Location *" required minlength="5">
+<input name="drop" placeholder="Drop Location *" required minlength="5">
+<input name="moveType" placeholder="Move Type (e.g., 1 BHK Local Move)" minlength="3">
+<input name="date" type="date" id="moveDate">
+<textarea name="message" placeholder="Message"></textarea>
+<button type="submit">Submit Quote</button>
+</form>
+</section>
+
+<section>
+<h3>Our Location</h3>
+<iframe
+src="https://www.google.com/maps?q=Ram+Ji+Lal+Complex+DDA+Market+Kalkaji+New+Delhi+110019&output=embed"
+width="100%" height="300" style="border:0;" loading="lazy"></iframe>
+</section>
+
+<footer>
+<p><strong>Phone:</strong> <a href="tel:7303503765">7303503765</a></p>
+<p><strong>Email:</strong> <a href="mailto:info.packkro@gmail.com">info.packkro@gmail.com</a></p>
+<p><strong>Address:</strong><br>
+Ram Ji Lal Complex, DDA Market, DDA Flats Kalkaji,<br>
+Block L-2, Kalkaji, New Delhi – 110019</p>
+</footer>
+
+<script>
+/* Reviews auto slider */
+let rIndex = 0;
+const reviewsTrack = document.getElementById("reviewsTrack");
+setInterval(()=>{
+  rIndex = (rIndex + 1) % reviewsTrack.children.length;
+  reviewsTrack.style.transform = `translateX(-${rIndex * 100}%)`;
+}, 4000);
+
+/* --- Validation and Form Submission --- */
+document.getElementById("quoteForm").addEventListener("submit", async e => {
+  e.preventDefault();
+  const f = e.target;
+  
+  // 1. **Check built-in HTML validation first (required, minlength, pattern, type="email")**
+  if (!f.checkValidity()) {
+    // If not valid, the browser will show the default error messages
+    f.reportValidity(); 
+    return;
+  }
+
+  // 2. **Custom Validation for Move Date (must be today or future)**
+  const moveDateInput = document.getElementById("moveDate");
+  const moveDateValue = moveDateInput.value;
+  
+  if (moveDateValue) {
+    // The date input value is in YYYY-MM-DD format
+    const selectedDate = new Date(moveDateValue);
+    
+    // Set up today's date at the very start of the day (midnight) for fair comparison
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); 
+    
+    // The selected date's time zone offset might make it look like a day before
+    // when using Date(YYYY-MM-DD). We use `selectedDate.getTimezoneOffset()` 
+    // to correct the selection to the local timezone's start of day.
+    const selectedDateLocal = new Date(selectedDate.getTime() + selectedDate.getTimezoneOffset() * 60000);
+    
+    if (selectedDateLocal < today) {
+      alert("Please select a moving date that is today or in the future.");
+      moveDateInput.focus();
+      return; // Stop submission
+    }
+  }
+
+  // 3. **If all validations pass, proceed with submission**
+  const data = {
+    name: f.name.value.trim(),
+    phone: f.phone.value.trim(),
+    email: f.email.value.trim(),
+    pickup: f.pickup.value.trim(),
+    drop: f.drop.value.trim(),
+    moveType: f.moveType.value.trim(),
+    date: f.date.value,
+    message: f.message.value.trim()
+  };
+
+  try {
+    const url = "https://script.google.com/macros/s/AKfycbwUbhQKiZnRC3Y0qZYkQr-3XWoldqEThMStzt6K3Z6IrKuqCFRePTrZ65XPv9Qh02qBZg/exec";
+    const response = await fetch(url, {
+      method: "POST",
+      body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+        alert("Thank you! Your quote request has been submitted. We will contact you soon.");
+        f.reset();
+    } else {
+        // Handle server error if the Google Script fails
+        alert("Submission failed. Please try again later or call us directly.");
+    }
+  } catch (error) {
+    console.error("Submission error:", error);
+    alert("A network error occurred. Please check your connection or call us directly.");
+  }
+});
+</script>
+
+</body>
+</html>
