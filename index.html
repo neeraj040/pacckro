@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PACKKRO – Packers & Movers Delhi/NCR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="PACKKRO – Professional Packers & Movers in Delhi NCR">
+
+<style>
+:root{
+  --yellow:#ffb703;
+  --black:#0f172a;
+  --gray:#64748b;
+  --blue:#2563eb;
+  --bg:#f8fafc;
+}
+*{box-sizing:border-box;font-family:Inter,Arial,sans-serif}
+body{margin:0;background:var(--bg);color:var(--black)}
+a{text-decoration:none;color:inherit}
+
+/* HEADER */
+header{
+  background:#020617;color:#fff;
+  padding:15px 8%;
+  display:flex;justify-content:space-between;align-items:center;
+}
+header h1{margin:0;color:var(--yellow)}
+nav a{margin-left:20px;font-weight:500}
+
+/* HERO */
+.hero{
+  padding:70px 8%;
+  display:grid;
+  grid-template-columns:1.1fr 1fr;
+  gap:50px;
+  align-items:center;
+}
+.hero h2{font-size:42px;margin:0}
+.hero p{color:#475569;max-width:520px}
+
+/* QUOTE FORM */
+.quote-card{
+  background:#fff;
+  padding:30px;
+  border-radius:18px;
+  box-shadow:0 20px 40px rgba(0,0,0,.08);
+}
+.quote-card h3{margin-top:0}
+.quote-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+.quote-grid input,
+.quote-grid textarea{
+  padding:12px;
+  border-radius:8px;
+  border:1px solid #cbd5e1;
+}
+.quote-grid textarea{grid-column:1/3}
+.quote-card button{
+  grid-column:1/3;
+  padding:14px;
+  border:none;
+  border-radius:10px;
+  background:var(--yellow);
+  font-weight:700;
+  cursor:pointer;
+}
+
+/* HERO IMAGE */
+.hero-img{position:relative}
+.hero-img img{
+  width:100%;
+  border-radius:18px;
+  box-shadow:0 30px 60px rgba(0,0,0,.25);
+}
+
+/* SECTIONS */
+section{padding:80px 8%}
+h3{text-align:center;font-size:34px;margin-bottom:10px}
+
+/* SERVICES */
+.services-sub{
+  text-align:center;
+  max-width:650px;
+  margin:0 auto 50px;
+  color:#64748b;
+}
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+.service-card{
+  background:#fff;
+  padding:30px;
+  border-radius:18px;
+  box-shadow:0 15px 30px rgba(0,0,0,.06);
+  transition:.3s;
+}
+.service-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 45px rgba(0,0,0,.08);
+}
+.service-icon{
+  width:48px;
+  height:48px;
+  background:#eef2ff;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+  margin-bottom:18px;
+}
+.service-card h4{margin:0 0 10px;font-size:20px}
+.service-card p{color:#64748b;font-size:15px;line-height:1.6}
+.learn{
+  margin-top:12px;
+  display:inline-block;
+  color:var(--blue);
+  font-weight:600;
+}
+
+/* WHY */
+.why{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
+}
+.why img{
+  width:100%;
+  border-radius:18px;
+}
+
+/* REVIEWS */
+.reviews {
+  padding: 80px 8%;
+  background: var(--bg);
+}
+.reviews h3 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+.reviews-carousel {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.review-card {
+  flex: 0 0 100%;
+  max-width: 320px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  margin: 0 10px;
+  text-align: center;
+  transition: transform 0.4s ease;
+}
+.review-card:hover {
+  transform: translateY(-4px);
+}
+.review-avatar {
+  width: 60px;
+  height: 60px;
+  background: var(--gray);
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+}
+.review-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.review-location {
+  color: var(--gray);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.review-stars {
+  color: var(--yellow);
+  margin-bottom: 10px;
+}
+.review-text {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.6;
+}
+.reviews-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.reviews-controls button {
+  background: var(--yellow);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.reviews-controls button:hover {
+  background: #e69b00;
+}
+@media (max-width: 900px) {
+  .review-card {
+    max-width: 90%;
+  }
+}
+
+/* MAP SECTION */
+.map-container {
+  padding: 40px 8%;
+  background: var(--bg);
+}
+.map-container iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.map-container .address {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--gray);
+}
+
+/* FOOTER */
+footer{
+  background:#020617;
+  color:#e5e7eb;
+  padding:45px 8%;
+}
+footer a{color:var(--yellow)}
+
+@media(max-width:900px){
+.hero{grid-template-columns:1fr}
+.why{grid-template-columns:1fr}
+.hero h2{font-size:32px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>PACKKRO</h1>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#quote">Get Quote</a>
+    <a href="tel:7303503765">Call</a>
+  </nav>
+</header>
+
+<section class="hero">
+
+<div class="quote-card" id="quote">
+<h3>Get Your Instant Moving Quote</h3>
+<form id="quoteForm" class="quote-grid">
+<input name="name" placeholder="Full Name *" required>
+<input name="phone" placeholder="Phone (10 digits) *" required pattern="[0-9]{10}">
+<input name="email" placeholder="Email" type="email">
+<input name="pickup" placeholder="Pickup Location *" required>
+<input name="drop" placeholder="Drop Location *" required>
+<input name="moveType" placeholder="Move Type (1 BHK / Office)">
+<input type="date" name="date" id="moveDate">
+<textarea name="message" placeholder="Message"></textarea>
+<button type="submit">Get Instant Quote</button>
+</form>
+</div>
+
+<div>
+<h2>Complete Relocation Solutions</h2>
+<p>Safe, professional and stress-free moving services across Delhi NCR.</p>
+<div class="hero-img">
+  <img src="images/truck.png" alt="Packkro Truck">
+</div>
+</div>
+
+</section>
+
+<section id="services">
+<h3>Complete Relocation Solutions</h3>
+<p class="services-sub">
+Whether you're moving nearby or across the city, we ensure safe and smooth relocation.
+</p>
+
+<div class="services-grid">
+
+<div class="service-card">
+<div class="service-icon">🏠</div>
+<h4>Home Shifting</h4>
+<p>Safe packing and moving for 1, 2, 3 BHK and villas with complete care.</p>
+<span class="learn">Learn more →</span>
+</div>
+
+<div class="service-card">
+<div class="service-icon">🏢</div>
+<h4>Office Relocation</h4>
+<p>Efficient commercial shifting with minimal downtime and secure handling.</p>
+<span class="learn">Learn more →</span>
+</div>
+
+<div class="service-card">
+<div class="service-icon">📦</div>
+<h4>Packing & Unpacking</h4>
+<p>High-quality packing materials ensuring maximum safety of goods.</p>
+<span class="learn">Learn more →</span>
+</div>
+
+<div class="service-card">
+<div class="service-icon">🏬</div>
+<h4>Warehousing</h4>
+<p>Safe, clean and monitored storage solutions for short & long term.</p>
+<span class="learn">Learn more →</span>
+</div>
+
+</div>
+</section>
+
+<section>
+<h3>Why Choose PACKKRO</h3>
+<div class="why">
+<div class="services-grid">
+<div class="service-card">✔ Trained Staff</div>
+<div class="service-card">✔ Fully Insured Moves</div>
+<div class="service-card">✔ Affordable Pricing</div>
+<div class="service-card">✔ On-Time Delivery</div>
+</div>
+<img src="images/staff.png" alt="Packkro Staff">
+</div>
+</section>
+
+<section class="reviews">
+  <h3>What Our Customers Say</h3>
+  <div class="reviews-carousel" id="reviewsCarousel">
+    <div class="review-card">
+      <div class="review-avatar">AK</div>
+      <div class="review-name">Amit Kumar</div>
+      <div class="review-location">Delhi</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">Excellent service! The team was professional and ensured a smooth move.</p>
+    </div>
+    <div class="review-card">
+      <div class="review-avatar">SS</div>
+      <div class="review-name">Sneha Sharma</div>
+      <div class="review-location">Noida</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">Very reliable and affordable. Highly recommend PACKKRO for home shifting.</p>
+    </div>
+    <div class="review-card">
+      <div class="review-avatar">RK</div>
+      <div class="review-name">Rohit Khanna</div>
+      <div class="review-location">Gurgaon</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">The staff was courteous and handled everything with care. Great job!</p>
+    </div>
+    <div class="review-card">
+      <div class="review-avatar">PD</div>
+      <div class="review-name">Priya Das</div>
+      <div class="review-location">Faridabad</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">Impressed with their punctuality and professionalism. Will use again!</p>
+    </div>
+    <div class="review-card">
+      <div class="review-avatar">VK</div>
+      <div class="review-name">Vikas Kapoor</div>
+      <div class="review-location">Delhi</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">Affordable pricing and excellent service. Highly satisfied!</p>
+    </div>
+    <div class="review-card">
+      <div class="review-avatar">MS</div>
+      <div class="review-name">Megha Singh</div>
+      <div class="review-location">Noida</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">The team made my office relocation stress-free. Thank you!</p>
+    </div>
+    <div class="review-card">
+      <div class="review-avatar">RA</div>
+      <div class="review-name">Ravi Agarwal</div>
+      <div class="review-location">Gurgaon</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">Great experience! The packing was top-notch and very secure.</p>
+    </div>
+    <div class="review-card">
+      <div class="review-avatar">NK</div>
+      <div class="review-name">Neha Kapoor</div>
+      <div class="review-location">Faridabad</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">The team was friendly and efficient. Highly recommend their services.</p>
+    </div>
+    <div class="review-card">
+      <div class="review-avatar">AS</div>
+      <div class="review-name">Ankit Sharma</div>
+      <div class="review-location">Delhi</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">Very professional and timely service. Will definitely use again!</p>
+    </div>
+    <div class="review-card">
+      <div class="review-avatar">PK</div>
+      <div class="review-name">Pooja Khurana</div>
+      <div class="review-location">Noida</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">The best movers in NCR! They made my move so easy and hassle-free.</p>
+    </div>
+    <div class="review-card">
+      <div class="review-avatar">RS</div>
+      <div class="review-name">Rajesh Singh</div>
+      <div class="review-location">Gurgaon</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">Highly professional team. They handled everything with great care.</p>
+    </div>
+    <div class="review-card">
+      <div class="review-avatar">MK</div>
+      <div class="review-name">Manisha Kohli</div>
+      <div class="review-location">Faridabad</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">The team was very efficient and friendly. Great experience overall!</p>
+    </div>
+    <div class="review-card">
+      <div class="review-avatar">AK</div>
+      <div class="review-name">Arjun Khanna</div>
+      <div class="review-location">Delhi</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">Fantastic service! They made my move completely stress-free.</p>
+    </div>
+  </div>
+  <div class="reviews-controls">
+    <button id="prevReview">‹</button>
+    <button id="nextReview">›</button>
+  </div>
+</section>
+
+<!-- Google Map Section -->
+<section class="map-container">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14014.123456789!2d77.123456!3d28.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce123456789%3A0x123456789abcdef!2sRam%20Ji%20Lal%20Complex%2C%20DDA%20Market%2C%20DDA%20Flats%20Kalkaji%2C%20Block%20L-2%2C%20Kalkaji%2C%20New%20Delhi!5e0!3m2!1sen!2sin!4v1234567890"
+    allowfullscreen=""
+    loading="lazy"
+  ></iframe>
+  <p class="address">
+    Ram Ji Lal Complex, DDA Market, DDA Flats Kalkaji, Block L-2, Kalkaji, New Delhi
+  </p>
+</section>
+
+<footer>
+<p><strong>Phone:</strong> <a href="tel:7303503765">7303503765</a></p>
+<p><strong>Email:</strong> <a href="mailto:info.packkro@gmail.com">info.packkro@gmail.com</a></p>
+<p>Ram Ji Lal Complex, DDA Market, DDA Flats Kalkaji, Block L-2, Kalkaji, New Delhi</p>
+</footer>
+
+<script>
+document.getElementById("quoteForm").addEventListener("submit", async e => {
+  e.preventDefault();
+  const f = e.target;
+  if (!f.checkValidity()) {
+    f.reportValidity();
+    return;
+  }
+
+  const data = {
+    name: f.name.value,
+    phone: f.phone.value,
+    email: f.email.value,
+    pickup: f.pickup.value,
+    drop: f.drop.value,
+    moveType: f.moveType.value,
+    date: f.date.value,
+    message: f.message.value
+  };
+
+  try {
+    const res = await fetch(
+      "https://script.google.com/macros/s/AKfycbwUbhQKiZnRC3Y0qZYkQr-3XWoldqEThMStzt6K3Z6IrKuqCFRePTrZ65XPv9Qh02qBZg/exec",
+      { method: "POST", body: JSON.stringify(data) }
+    );
+
+    if (res.ok) {
+      alert("Quote submitted successfully");
+      f.reset();
+    } else {
+      alert("Submission failed");
+    }
+  } catch {
+    alert("Network error");
+  }
+});
+
+const carousel = document.getElementById("reviewsCarousel");
+const prevBtn = document.getElementById("prevReview");
+const nextBtn = document.getElementById("nextReview");
+
+prevBtn.addEventListener("click", () => {
+  carousel.scrollBy({ left: -320, behavior: "smooth" });
+});
+
+nextBtn.addEventListener("click", () => {
+  carousel.scrollBy({ left: 320, behavior: "smooth" });
+});
+</script>
+
+</body>
+</html>
